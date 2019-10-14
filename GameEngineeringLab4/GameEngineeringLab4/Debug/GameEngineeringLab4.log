@@ -1,0 +1,9 @@
+﻿  Game.cpp
+C:\Users\patrykwysocki\Desktop\GameEngineeringLab4\GameEngineeringLab4\GameEngineeringLab4\Game.cpp(92,10): warning C4473:  'printf' : not enough arguments passed for format string
+C:\Users\patrykwysocki\Desktop\GameEngineeringLab4\GameEngineeringLab4\GameEngineeringLab4\Game.cpp(92,10): message :  placeholders and their parameters expect 1 variadic arguments, but 0 were provided
+C:\Users\patrykwysocki\Desktop\GameEngineeringLab4\GameEngineeringLab4\GameEngineeringLab4\Game.cpp(92,10): message :  the missing variadic argument 1 is required by format string '%s'
+C:\Users\patrykwysocki\Desktop\GameEngineeringLab4\GameEngineeringLab4\GameEngineeringLab4\Game.cpp(110,80): warning C4474:  'printf' : too many arguments passed for format string
+C:\Users\patrykwysocki\Desktop\GameEngineeringLab4\GameEngineeringLab4\GameEngineeringLab4\Game.cpp(110,80): message :  placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+C:\Users\patrykwysocki\Desktop\GameEngineeringLab4\GameEngineeringLab4\GameEngineeringLab4\Game.cpp(118,90): warning C4474:  'printf' : too many arguments passed for format string
+C:\Users\patrykwysocki\Desktop\GameEngineeringLab4\GameEngineeringLab4\GameEngineeringLab4\Game.cpp(118,90): message :  placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+  GameEngineeringLab4.vcxproj -> C:\Users\patrykwysocki\Desktop\GameEngineeringLab4\GameEngineeringLab4\Debug\GameEngineeringLab4.exe
