@@ -1,12 +1,11 @@
 #pragma once
-#include "Entity.h"
-class HealthSystem
+#include "System.h"
+#include "HealthComponent.h"
+
+class HealthSystem : public System
 {
 public:
 	HealthSystem();
 	~HealthSystem();
-	void addEntity(Entity e);
-	void update();
-private:
-	std::vector<Entity> m_entities;
+	void updateComponent(Component* component) override;
 };

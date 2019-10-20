@@ -1,12 +1,13 @@
 #pragma once
-#include "Entity.h"
-class ControlSystem
+#include <SDL.h>
+#include "System.h"
+#include "PositionComponent.h"
+
+class ControlSystem : public System
 {
 public:
 	ControlSystem();
 	~ControlSystem();
-	void addEntity(Entity e);
-	void update();
-private:
-	std::vector<Entity> m_entities;
+	void updateComponent(Component* component) override;
+	void handleInput(SDL_Keycode key);
 };

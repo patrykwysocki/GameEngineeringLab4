@@ -1,12 +1,17 @@
 #pragma once
-#include "Entity.h"
-class RenderSystem
-{
+#include<iostream>
+#include"System.h"
+#include"RenderComponent.h"
+#include"Entity.h"
+#include"PositionComponent.h"
+#include "HealthComponent.h"
+
+class RenderSystem : public System {
 public:
 	RenderSystem();
 	~RenderSystem();
-	void addEntity(Entity e);
-	void update();
+	void addEntity(Entity e)override;
+	void updateComponent(Component* c)override;
+	void draw();
 private:
-	std::vector<Entity> m_entities;
 };

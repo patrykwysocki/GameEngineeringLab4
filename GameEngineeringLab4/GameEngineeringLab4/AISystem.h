@@ -1,12 +1,14 @@
 #pragma once
-#include "Entity.h"
-class AISystem
+
+#include <SDL.h>
+#include "System.h"
+#include "PositionComponent.h"
+
+class AISystem : public System
 {
 public:
 	AISystem();
 	~AISystem();
-	void addEntity(Entity e);
-	void update();
+	void updateComponent(Component* component) override;
 private:
-	std::vector<Entity> m_entities;
 };

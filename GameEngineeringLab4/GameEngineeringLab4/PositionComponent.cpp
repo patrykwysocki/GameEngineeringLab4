@@ -1,7 +1,10 @@
 #include "PositionComponent.h"
 
-PositionComponent::PositionComponent():m_currentX(100),m_currentY(200)
+PositionComponent::PositionComponent(int t_x, int t_y) :
+	m_currentX(t_x),
+	m_currentY(t_y)
 {
+
 }
 
 PositionComponent::~PositionComponent()
@@ -21,4 +24,24 @@ void PositionComponent::setPosition(int t_x, int t_y)
 {
 	m_currentX = t_x;
 	m_currentY = t_y;
+}
+
+void PositionComponent::moveUp()
+{
+	m_currentY-= 5;
+}
+
+void PositionComponent::moveDown()
+{
+	m_currentY += 5;
+}
+
+void PositionComponent::moveLeft()
+{
+	m_currentX -= 5;
+}
+
+void PositionComponent::moveRight()
+{
+	m_currentX += 5;
 }

@@ -1,12 +1,16 @@
 #pragma once
 #include "Component.h"
-class HealthComponent : Component
+#include <iostream>
+class HealthComponent : public Component
 {
 public:
-	HealthComponent();
+	HealthComponent(int t_health);
 	~HealthComponent();
 	int getHealth();
 	void setHealth(int t_health);
+	bool getAlive();
+	void dead();
 private:
 	int m_currentHealth;
+	bool m_alive;
 };

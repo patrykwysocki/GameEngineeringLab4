@@ -1,15 +1,23 @@
 #pragma once
 #include <vector>
 #include "Component.h"
+
 class Entity
 {
 public:
-	Entity();
-	~Entity();
-	int id;
-	void addComponent(Component c);
-	void removeComponent(Component c);
-	std::vector<Component> getComponents();
+	Entity() {};
+	~Entity() {};
+	void addComponent(Component* component) {
+		m_components.push_back(component);
+	};
+
+	int getId() {
+		return m_id;
+	};
+	std::vector<Component*> getComponents() {
+		return m_components;
+	};
 private:
-	std::vector<Component> components;
+	int m_id;
+	std::vector<Component*> m_components;
 };
